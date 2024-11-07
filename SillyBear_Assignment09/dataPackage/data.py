@@ -13,19 +13,20 @@
 ########################################################################################################################################################################
 
 import pyodbc
- 
-def Data_loader(): 
-    """
-    Connects to the database and returns the connection object.
-    Provides detailed error messages if the connection fails.
-    """
-    conn = pyodbc.connect(
-        'Driver={SQL Server};'
-        'Server=lcb-sql.uccob.uc.edu\\nicholdw;'
-        'Database=GroceryStoreSimulator ;'
-        'uid=IS4010Login;'
-        'pwd=P@ssword2;'
-    )
-    return conn
+class Loader:
+    
+    def Data_loader(): 
+        """
+        Connects to the database and returns the connection object.
+        Provides detailed error messages if the connection fails.
+        """
+        conn = pyodbc.connect(
+            'Driver={SQL Server};'
+            'Server=lcb-sql.uccob.uc.edu\\nicholdw;'
+            'Database=GroceryStoreSimulator ;'
+            'uid=IS4010Login;'
+            'pwd=P@ssword2;'
+        )
+        return conn
  
    

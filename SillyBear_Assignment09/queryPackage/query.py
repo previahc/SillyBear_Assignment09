@@ -12,15 +12,16 @@
 # Anything else that's relevant:                                                                                                                                       #
 ########################################################################################################################################################################
 import pyodbc
-from dataPackage.data import Data_loader
+from dataPackage.data import Loader
 import random
+
 
 
 class Queries:
     def __init__(self):
-            self.conn = Data_loader()
-            self.cursor = self.conn.cursor()
-
+        loader = Loader()
+        self.conn = Loader.Data_loader()
+        self.cursor = self.conn.cursor()
     def get_all_products(self):
         """Fetch all products."""
         product_query = "SELECT ProductID, [UPC-A ], Description, ManufacturerID, BrandID FROM tProduct"
