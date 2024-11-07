@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f85a4537-7598-4da0-b57f-c1085c4db4dc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>queryPackage\query.py</StartupFile>
+    <StartupFile>mainPackage\main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,11 +22,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="dataPackage\" />
+    <Folder Include="mainPackage\" />
     <Folder Include="queryPackage\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dataPackage\data.py" />
     <Compile Include="dataPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mainPackage\main.py" />
+    <Compile Include="mainPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="queryPackage\query.py">
