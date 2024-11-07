@@ -24,5 +24,5 @@ if __name__ == "__main__":
  
    
     output = f"The product '{description}', manufactured by {manufacturer} and branded as {brand}, has sold {number_of_items_sold} items."
-    print(output)
+    print(output) 
 
